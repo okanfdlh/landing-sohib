@@ -9,11 +9,11 @@ const AboutSection = () => {
           {/* Header */}
           <div className="space-y-4 animate-fade-in-up">
             <h2 className="font-inter text-4xl lg:text-5xl font-bold text-primary">
-              About Sohib Coding
+              Tentang Kami
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Founded in early 2025, we're a fresh yet experienced freelance tech brand 
-              dedicated to bringing digital transformation to businesses of all sizes.
+                Kami adalah sebuah perusahaan yang bergerak di bidang teknologi informasi. 
+                Kami memiliki pengalaman lebih dari 10 tahun dalam pengembangan perangkat lunak dan solusi teknologi.
             </p>
           </div>
           
@@ -21,24 +21,24 @@ const AboutSection = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center text-left">
             <div className="space-y-6 animate-fade-in-up">
               <div className="space-y-4">
-                <h3 className="font-inter text-2xl font-semibold text-primary">Our Journey</h3>
+                <h3 className="font-inter text-2xl font-semibold text-primary">Jalur Kami</h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  Since our founding in early 2025, Sohib Coding has rapidly established itself 
-                  as a trusted partner for digital innovation. With over 10 successful projects 
+                  Sejak didirikan pada awal 2025, Sohib Coding telah cepat menjadi mitra yang 
+                  dipercaya untuk inovasi digital. Dengan lebih dari 10 proyek sukses 
                   completed, we've helped startups launch their first products and assisted 
                   established businesses modernize their digital presence.
                 </p>
                 <p className="text-muted-foreground leading-relaxed">
-                  Our approach combines cutting-edge technology with practical business solutions, 
-                  ensuring every project delivers real value and drives measurable results.
+                  Pendekatan kami menggabungkan teknologi canggih dengan solusi bisnis praktis, 
+                  memastikan setiap proyek memberikan nilai nyata dan menghasilkan hasil yang dapat diukur.
                 </p>
               </div>
               
               <div className="flex items-start gap-3">
                 <CheckCircle className="h-6 w-6 text-accent-green mt-0.5 flex-shrink-0" />
                 <div>
-                  <div className="font-semibold text-primary">10+ Projects Completed</div>
-                  <div className="text-sm text-muted-foreground">Across various industries and technologies</div>
+                  <div className="font-semibold text-primary">10+ Proyek Selesai</div>
+                  <div className="text-sm text-muted-foreground">Dalam berbagai industri dan teknologi</div>
                 </div>
               </div>
             </div>
@@ -50,10 +50,10 @@ const AboutSection = () => {
                     <Target className="h-6 w-6 text-primary" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-primary mb-2">Our Mission</h4>
+                    <h4 className="font-semibold text-primary mb-2">Misi Kami</h4>
                     <p className="text-muted-foreground text-sm leading-relaxed">
-                      Helping digitalize small businesses and startups by providing 
-                      modern, scalable, and user-friendly technology solutions.
+                      Membantu bisnis kecil dan startup digitalisasi dengan menyediakan 
+                      solusi teknologi modern, skalabel, dan mudah digunakan.
                     </p>
                   </div>
                 </div>
@@ -65,10 +65,10 @@ const AboutSection = () => {
                     <Users className="h-6 w-6 text-accent-green-foreground" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-primary mb-2">Our Vision</h4>
+                    <h4 className="font-semibold text-primary mb-2">Visi Kami</h4>
                     <p className="text-muted-foreground text-sm leading-relaxed">
-                      To be the go-to partner for businesses seeking reliable, 
-                      innovative digital solutions that drive growth and success.
+                      Menjadi mitra utama bagi bisnis yang mencari solusi digital yang 
+                      handal, inovatif, dan mendorong pertumbuhan dan kesuksesan.
                     </p>
                   </div>
                 </div>
@@ -80,10 +80,10 @@ const AboutSection = () => {
                     <Rocket className="h-6 w-6 text-accent-yellow-foreground" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-primary mb-2">Our Values</h4>
+                    <h4 className="font-semibold text-primary mb-2">Nilai Kami</h4>
                     <p className="text-muted-foreground text-sm leading-relaxed">
-                      Quality, transparency, and client success drive everything we do. 
-                      We believe in building long-term partnerships, not just projects.
+                      Kualitas, transparansi, dan kesuksesan klien menjadi dasar dari apa yang kami lakukan. 
+                      Kami percaya pada hubungan jangka panjang, bukan hanya proyek.
                     </p>
                   </div>
                 </div>

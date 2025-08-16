@@ -6,7 +6,7 @@ const WhyChooseUsSection = () => {
     {
       icon: Zap,
       title: 'Agile Workflow',
-      description: 'We use proven agile methodologies to deliver projects efficiently with regular updates and flexibility for changes.',
+      description: 'Kami menggunakan metode agile yang terbukti untuk mengirimkan proyek dengan efisien dengan pembaruan rutin dan fleksibilitas untuk perubahan.',
       color: 'bg-accent-yellow/10 text-accent-yellow-foreground'
     },
     {

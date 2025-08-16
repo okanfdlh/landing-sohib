@@ -5,33 +5,33 @@ const ServicesSection = () => {
   const services = [
     {
       icon: Globe,
-      title: 'Web Development',
-      description: 'Modern, responsive websites built with React, Next.js, and cutting-edge technologies.',
-      features: ['Responsive Design', 'SEO Optimized', 'Fast Performance', 'Modern Frameworks']
+      title: 'Pengembangan Web',
+      description: 'Website modern, responsif yang dibangun dengan React, Next.js, dan teknologi canggih.',
+      features: ['Desain Responsif', 'Optimasi SEO', 'Kinerja Cepat', 'Framework Modern']
     },
     {
       icon: Smartphone,
-      title: 'Mobile App Development',
-      description: 'Cross-platform mobile apps using Flutter for iOS and Android platforms.',
-      features: ['Cross-Platform', 'Native Performance', 'App Store Ready', 'Flutter Framework']
+      title: 'Pengembangan Aplikasi Mobile',
+      description: 'Aplikasi mobile lintas platform menggunakan Flutter untuk platform iOS dan Android.',
+      features: ['Lintas Platform', 'Kinerja Native', 'Siap untuk App Store', 'Framework Flutter']
     },
     {
       icon: Server,
       title: 'API/Backend Development',
-      description: 'Robust backend systems and APIs for seamless data management and integration.',
-      features: ['RESTful APIs', 'Database Design', 'Cloud Integration', 'Scalable Architecture']
+      description: 'Sistem backend yang robust dan API untuk manajemen data yang lancar dan integrasi.',
+      features: ['API RESTful', 'Desain Database', 'Integrasi Cloud', 'Arsitektur Skalabel']
     },
     {
       icon: Palette,
       title: 'UI/UX Design',
-      description: 'User-centered design that creates intuitive and engaging digital experiences.',
-      features: ['User Research', 'Wireframing', 'Prototyping', 'Design Systems']
+      description: 'Desain UI/UX yang berfokus pada pengalaman digital yang intuitif dan menarik.',
+      features: ['Penelitian Pengguna', 'Wireframing', 'Prototyping', 'Sistem Desain']
     },
     {
       icon: MessageSquare,
-      title: 'Tech Consultation',
-      description: 'Strategic technology guidance to help you make informed decisions for your business.',
-      features: ['Technology Stack', 'Architecture Planning', 'Best Practices', 'Growth Strategy']
+      title: 'Konsultasi Teknologi',
+      description: 'Panduan teknologi strategis untuk membantu Anda membuat keputusan yang tepat untuk bisnis Anda.',
+      features: ['Teknologi Stack', 'Perencanaan Arsitektur', 'Praktik Terbaik', 'Strategi Pertumbuhan']
     }
   ];
 
@@ -45,8 +45,8 @@ const ServicesSection = () => {
               Our Services
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Comprehensive digital solutions tailored to your business needs, 
-              from concept to deployment and beyond.
+              Solusi digital yang sesuai dengan kebutuhan bisnis Anda, 
+              dari konsep hingga deployment dan lebih jauh.
             </p>
           </div>
           
@@ -91,14 +91,14 @@ const ServicesSection = () => {
           {/* CTA */}
           <div className="text-center mt-16 animate-fade-in-up">
             <p className="text-muted-foreground mb-6">
-              Need a custom solution? We'd love to discuss your project requirements.
+              Butuh solusi kustom? Kami akan senang membicarakan kebutuhan proyek Anda.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button className="bg-primary text-primary-foreground px-8 py-3 rounded-lg font-semibold hover:bg-primary-light transition-all duration-300 hover:shadow-medium hover:scale-105">
-                Get Custom Quote
+                Dapatkan Penawaran Kustom
               </button>
               <button className="border border-primary/20 bg-background/50 text-primary px-8 py-3 rounded-lg font-semibold hover:bg-primary hover:text-primary-foreground transition-all duration-300 hover:shadow-soft">
-                Learn More
+                Pelajari Lebih Lanjut
               </button>
             </div>
           </div>
