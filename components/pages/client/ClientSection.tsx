@@ -6,27 +6,42 @@ import Image from "next/image";
 interface ClientLogo {
   id: number;
   name: string;
-  type: 'government' | 'company' | 'university';
+  type: "government" | "company" | "university";
   image?: string;
 }
 
 const governmentClients: ClientLogo[] = [
-  { id: 1, name: "Desa Rias", type: 'government' },
-  { id: 2, name: "Desa Pemali", type: 'government' },
-  { id: 3, name: "Badan Pusat Statistik", type: 'government' },
-  { id: 4, name: "Kementerian Komunikasi", type: 'government' },
+  { id: 1, name: "Desa Rias", type: "government" },
+  { id: 2, name: "Desa Pemali", type: "government" },
+  { id: 3, name: "Badan Pusat Statistik", type: "government" },
+  { id: 4, name: "Kementerian Komunikasi", type: "government" },
 ];
 
 const industryClients: ClientLogo[] = [
-  { id: 5, name: "Rumah Seduh", type: 'company', image: "/images/client/rslogo.jpg" },
-  { id: 6, name: "Cinema XXI", type: 'company' },
-  { id: 7, name: "LTDO Cinema", type: 'company' },
-  { id: 8, name: "Bank Mandiri", type: 'company' },
+  {
+    id: 5,
+    name: "Rumah Seduh",
+    type: "company",
+    image: "/images/client/rslogo.jpg",
+  },
+  { id: 6, name: "Cinema XXI", type: "company" },
+  { id: 7, name: "LTDO Cinema", type: "company" },
+  { id: 8, name: "Bank Mandiri", type: "company" },
 ];
 
 const universityClients: ClientLogo[] = [
-  { id: 9, name: "Polman Babel", type: 'university',image: "/images/client/polman.png"},
-  { id: 10, name: "Universitas Sriwijaya", type: 'university',image: "/images/client/unsli.png" },
+  {
+    id: 9,
+    name: "Polman Babel",
+    type: "university",
+    image: "/images/client/polman.png",
+  },
+  {
+    id: 10,
+    name: "Universitas Sriwijaya",
+    type: "university",
+    image: "/images/client/unsli.png",
+  },
   // { id: 11, name: "Universitas Gadjah Mada", type: 'university' },
   // { id: 12, name: "Universitas Airlangga", type: 'university' },
 ];
@@ -45,11 +60,11 @@ const ClientGrid = ({ clients }: ClientGridProps) => (
         <div className="aspect-square flex items-center justify-center">
           <div className="w-full h-full flex items-center justify-center">
             {client.image ? (
-              <Image 
-                src={client.image} 
-                alt={client.name} 
+              <Image
+                src={client.image}
+                alt={client.name}
                 width={100}
-                height={100} 
+                height={100}
                 className="object-contain w-full h-full group-hover:scale-110 transition-transform duration-500"
               />
             ) : (
@@ -99,21 +114,22 @@ const ClientShowcase = () => {
               title="Instansi Pemerintah"
               clients={governmentClients}
             />
-            
+
             <ClientSection
               title="Perusahaan & Industri"
               clients={industryClients}
             />
-            
-            <ClientSection
-              title="Universitas"
-              clients={universityClients}
-            />
+
+            <ClientSection title="Universitas" clients={universityClients} />
           </div>
 
           {/* More Button */}
           <div className="text-center mt-16 animate-fade-in-up">
-            <Button variant="hero" size="lg" className="group bg-gradient-primary text-primary-foreground hover:shadow-large hover:scale-105 transition-all duration-300">
+            <Button
+              variant="hero"
+              size="lg"
+              className="group bg-gradient-primary text-primary-foreground hover:shadow-large hover:scale-105 transition-all duration-300"
+            >
               Lebih Banyak
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-200" />
             </Button>
