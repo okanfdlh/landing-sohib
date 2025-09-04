@@ -9,7 +9,8 @@ const config = {
   theme: {
     extend: {
       backgroundImage: {
-        'gradient-primary': 'linear-gradient(to bottom right, hsl(var(--primary)), hsl(var(--primary-light)))',
+        "gradient-primary":
+          "linear-gradient(to bottom right, hsl(var(--primary)), hsl(var(--primary-light)))",
       },
       colors: {
         background: "hsl(var(--background))",
@@ -28,9 +29,23 @@ const config = {
         "accent-yellow": "hsl(var(--accent-yellow))",
         "accent-yellow-foreground": "hsl(var(--accent-yellow-foreground))",
       },
+      keyframes: {
+        "scale-slow": {
+          "0%, 100%": { transform: "scale(1)" },
+          "50%": { transform: "scale(1.08)" },
+        },
+        float: {
+          "0%, 100%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(-6px)" },
+        },
+      },
+      animation: {
+        "scale-slow": "scale-slow 6s ease-in-out infinite",
+        float: "float 5s ease-in-out infinite",
+      },
     },
   },
   plugins: [],
-}
+};
 
-module.exports = config
+module.exports = config;
