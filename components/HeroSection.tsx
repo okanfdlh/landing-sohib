@@ -1,11 +1,11 @@
-import React from 'react';
-import { Button } from '@/components/ui/button';
-import { ArrowRight, Code, Smartphone, Globe } from 'lucide-react';
-import Image from 'next/image';
+import React from "react";
+import { Button } from "@/components/ui/button";
+import { MessageCircleMore } from "lucide-react";
+import Image from "next/image";
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex items-center bg-gradient-subtle overflow-hidden">
+    <section className="relative min-h-screen flex items-center bg-gradient-subtle overflow-hidden mt-6">
       {/* Background decoration */}
       <div className="absolute inset-0 opacity-5 pointer-events-none">
         <div className="absolute top-20 left-10 w-20 h-20 bg-primary rounded-full animate-bounce-gentle" />
@@ -25,9 +25,9 @@ const HeroSection = () => {
                 </span>
               </h1>
               <p className="text-lg lg:text-xl text-muted-foreground max-w-2xl font-inter">
-                Ubah ide Anda menjadi pengalaman digital yang kuat. 
-                Kami membuat situs web modern, aplikasi mobile, 
-                dan solusi khusus yang mendorong pertumbuhan dan kesuksesan.
+                Ubah ide Anda menjadi pengalaman digital yang kuat. Kami membuat
+                situs web modern, aplikasi mobile, dan solusi khusus yang
+                mendorong pertumbuhan dan kesuksesan.
               </p>
             </div>
 
@@ -35,47 +35,11 @@ const HeroSection = () => {
             <div className="flex flex-col sm:flex-row gap-4 items-start">
               <Button variant="hero" size="xl" className="group">
                 Konsultasi Gratis
-                <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                <MessageCircleMore className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </Button>
               <Button variant="outline" size="xl" className="font-inter">
-                Lihat Karya Kami
+                Produk Kami
               </Button>
-            </div>
-
-            {/* Stats */}
-            <div className="flex flex-wrap gap-8 pt-6">
-              {/* Stat 1 */}
-              <div className="flex items-center gap-3">
-                <div className="w-10 h-10 bg-accent-green/20 rounded-lg flex items-center justify-center">
-                  <Code className="h-5 w-5 text-accent-green-foreground" />
-                </div>
-                <div>
-                  <div className="font-semibold text-primary">10+</div>
-                  <div className="text-sm text-muted-foreground">Proyek Selesai</div>
-                </div>
-              </div>
-
-              {/* Stat 2 */}
-              <div className="flex items-center gap-3">
-                <div className="w-10 h-10 bg-accent-yellow/20 rounded-lg flex items-center justify-center">
-                  <Smartphone className="h-5 w-5 text-accent-yellow-foreground" />
-                </div>
-                <div>
-                  <div className="font-semibold text-primary">100%</div>
-                  <div className="text-sm text-muted-foreground">Kepuasan Klien</div>
-                </div>
-              </div>
-
-              {/* Stat 3 */}
-              <div className="flex items-center gap-3">
-                <div className="w-10 h-10 bg-primary/20 rounded-lg flex items-center justify-center">
-                  <Globe className="h-5 w-5 text-primary" />
-                </div>
-                <div>
-                  <div className="font-semibold text-primary">2025</div>
-                  <div className="text-sm text-muted-foreground">Berdiri</div>
-                </div>
-              </div>
             </div>
           </div>
 
