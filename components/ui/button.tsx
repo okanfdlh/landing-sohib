@@ -20,6 +20,7 @@ const buttonVariants = cva(
           "bg-secondary text-secondary-foreground hover:bg-secondary/80 hover:shadow-soft",
         ghost: "hover:bg-accent hover:text-accent-foreground hover:shadow-soft",
         link: "text-primary underline-offset-4 hover:underline hover:text-primary-light",
+        client: "bg-client-button text-client-button-foreground hover:bg-client-button-hover hover:shadow-medium hover:scale-105",
       },
       size: {
         default: "h-10 px-4 py-2",

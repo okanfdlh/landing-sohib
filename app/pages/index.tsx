@@ -8,6 +8,7 @@ import TestimonialsSection from '@/components/TestimonialsSection';
 import PricingSection from '@/components/PricingSection';
 import FAQSection from '@/components/FAQSection';
 import CTASection from '@/components/CTASection';
+import ClientSection from '@/components/pages/client/ClientSection';
 import Footer from '@/components/Footer';
 
 const Index = () => {
@@ -15,6 +16,7 @@ const Index = () => {
     <div className="font-inter">
       <HeroSection />
       <AboutSection />
+      <ClientSection />
       <ServicesSection />
       <PortfolioSection />
       <WhyChooseUsSection />
