@@ -53,10 +53,10 @@ export default function ExperienceSection() {
             <Code className="h-10 w-10 text-green-600" />
           </div>
           <div>
-            <div className="font-extrabold text-gray-900 text-4xl">
+            <div className="font-extrabold text-primary text-4xl">
               <AnimatedNumber target={10} suffix="+" />
             </div>
-            <div className="text-base text-gray-600">Proyek Selesai</div>
+            <div className="text-base text-blue-400">Proyek Selesai</div>
           </div>
         </div>
 
@@ -66,10 +66,10 @@ export default function ExperienceSection() {
             <Smartphone className="h-10 w-10 text-yellow-600" />
           </div>
           <div>
-            <div className="font-extrabold text-gray-900 text-4xl">
+            <div className="font-extrabold text-primary text-4xl">
               <AnimatedNumber target={100} suffix="%" />
             </div>
-            <div className="text-base text-gray-600">Kepuasan Klien</div>
+            <div className="text-base text-blue-400">Kepuasan Klien</div>
           </div>
         </div>
 
@@ -79,10 +79,10 @@ export default function ExperienceSection() {
             <Building className="h-10 w-10 text-blue-600" />
           </div>
           <div>
-            <div className="font-extrabold text-gray-900 text-4xl">
+            <div className="font-extrabold text-primary text-4xl">
               <AnimatedNumber target={2025} />
             </div>
-            <div className="text-base text-gray-600">Berdiri</div>
+            <div className="text-base text-blue-400">Berdiri</div>
           </div>
         </div>
       </div>
