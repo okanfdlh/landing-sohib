@@ -12,10 +12,10 @@ const Footer = () => {
           {/* Brand Section */}
           <div className="space-y-6">
             <div>
-              <h3 className="font-inter text-2xl font-bold mb-2">Sohib Coding</h3>
+              <h3 className="font-inter text-2xl font-bold mb-2">Sohib Teknologi</h3>
               <p className="text-primary-foreground/80 text-sm leading-relaxed">
-                Reliable Digital Solutions for the Modern Business. Founded in 2025, 
-                we create websites, mobile apps, and custom solutions that drive growth.
+                Solusi Digital Andal untuk Bisnis Modern. Didirikan pada tahun 2025,
+                kami membuat website, aplikasi mobile, dan solusi khusus yang mendorong pertumbuhan.
               </p>
             </div>
             <div className="flex gap-4">
@@ -73,7 +73,7 @@ const Footer = () => {
                 <div>
                   <div className="text-sm font-medium">Email</div>
                   <a href="mailto:hello@sohibcoding.com" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors text-sm">
-                    hello@sohibcoding.com
+                    sohibcoding@gmail.com
                   </a>
                 </div>
               </div>
@@ -82,7 +82,7 @@ const Footer = () => {
                 <div>
                   <div className="text-sm font-medium">WhatsApp</div>
                   <a href="tel:+15551234567" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors text-sm">
-                    +1 (555) 123-4567
+                    +62 81281680004
                   </a>
                 </div>
               </div>
@@ -90,7 +90,7 @@ const Footer = () => {
                 <MapPin className="h-5 w-5 text-primary-foreground/80 mt-0.5 flex-shrink-0" />
                 <div>
                   <div className="text-sm font-medium">Location</div>
-                  <span className="text-primary-foreground/80 text-sm">Remote & Global</span>
+                  <span className="text-primary-foreground/80 text-sm">Sungailiat, Bangka Belitung</span>
                 </div>
               </div>
             </div>
