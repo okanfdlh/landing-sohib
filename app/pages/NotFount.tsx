@@ -8,7 +8,7 @@ import TestimonialsSection from '@/components/TestimonialsSection';
 import PricingSection from '@/components/PricingSection';
 import FAQSection from '@/components/FAQSection';
 import CTASection from '@/components/CTASection';
-import Footer from '@/components/Footer';
+import Footer from '@/components/section/Footer';
 
 const Index = () => {
   return (
