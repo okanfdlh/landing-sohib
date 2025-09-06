@@ -1,10 +1,9 @@
 "use client";
 import React, { useEffect } from "react";
-import HeroSection from "@/components/HeroSection";
-import AboutSection from "@/components/AboutSection";
+import HeroSection from "@/components/pages/hero/HeroSection";
+import AboutSection from "@/components/pages/about/AboutSection";
 import ExperienceSection from "@/components/ExperienceSection";
 import ServicesSection from "@/components/ServicesSection";
-import PortfolioSection from "@/components/PortfolioSection";
 import CTASection from "@/components/CTASection";
 import ClientSection from "@/components/pages/client/ClientSection";
 import Footer from "@/components/section/Footer";
@@ -34,7 +33,6 @@ const Index = () => {
       <ExperienceSection />
       <ServicesSection />
       <ClientSection />
-      <PortfolioSection />
       <CTASection />
       <Footer />
     </div>
