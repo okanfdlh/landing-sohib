@@ -9,11 +9,7 @@ import { MessageCircleMore } from "lucide-react";
 const sections = [
   { name: "Home", href: "#hero" },
   { name: "About", href: "#about" },
-  { name: "Portfolio", href: "#portfolio" },
-  { name: "Services", href: "#services" },
-  // { name: "Pricing", href: "#pricing" },
-  // { name: "Testimonials", href: "#testimonials" },
-  // { name: "FAQ", href: "#faq" },
+  { name: "Client", href: "#client" },
 ];
 
 const Navbar = () => (

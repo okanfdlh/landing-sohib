@@ -1,13 +1,13 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { MessageCircleMore } from "lucide-react";
-import AnimatedSection from "./AnimatedSection";
-import LiquidEther from "./LiquidEther";
-import TextType from './TextType';
+import AnimatedSection from "../../AnimatedSection";
+import LiquidEther from "../../LiquidEther";
+import TextType from '../../TextType';
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center bg-gradient-subtle overflow-hidden mt-6">
+    <section id="hero" className="relative min-h-screen flex items-center justify-center bg-gradient-subtle overflow-hidden mt-6">
       {/* LiquidEther Background Animation */}
       <div className="absolute inset-0 z-0">
         <LiquidEther className="w-full h-full" />
