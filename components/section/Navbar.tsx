@@ -20,7 +20,7 @@ const Navbar = () => (
   <nav className="w-full fixed top-0 left-0 z-50 bg-white/80 backdrop-blur-md border-b border-border shadow-sm">
     <div className="container mx-auto flex items-center justify-between px-6 py-4">
       <div className="text-2xl font-bold text-primary tracking-tight">
-        Sohib Coding
+        Sohib Teknologi
       </div>
       <div className="flex items-center justify-center h-full">
         <ul className="hidden md:flex items-center gap-6 py-2">
