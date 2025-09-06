@@ -1,118 +1,83 @@
+"use client";
+
 import React from "react";
-import {
-  Globe,
-  Smartphone,
-  Server,
-  Palette,
-  MessageSquare,
-} from "lucide-react";
-import AnimatedSection from "./AnimatedSection";
+import { motion } from "framer-motion";
+import { Button } from "@/components/ui/button";
+import AnimatedSection from "@/components/AnimatedSection";
+import { ArrowUpRight } from "lucide-react";
 
-const ServicesSection = () => {
-  const services = [
-    {
-      icon: Globe,
-      title: "Pengembangan Web",
-      description:
-        "Website modern, responsif yang dibangun dengan React, Next.js, dan teknologi canggih.",
-      features: [
-        "Desain Responsif",
-        "Optimasi SEO",
-        "Kinerja Cepat",
-        "Framework Modern",
-      ],
-    },
-    {
-      icon: Smartphone,
-      title: "Pengembangan Aplikasi Mobile",
-      description:
-        "Aplikasi mobile lintas platform menggunakan Flutter untuk platform iOS dan Android.",
-      features: [
-        "Lintas Platform",
-        "Kinerja Native",
-        "Siap untuk App Store",
-        "Framework Flutter",
-      ],
-    },
-    {
-      icon: Server,
-      title: "API/Backend Development",
-      description:
-        "Sistem backend yang robust dan API untuk manajemen data yang lancar dan integrasi.",
-      features: [
-        "API RESTful",
-        "Desain Database",
-        "Integrasi Cloud",
-        "Arsitektur Skalabel",
-      ],
-    },
-    {
-      icon: Palette,
-      title: "UI/UX Design",
-      description:
-        "Desain UI/UX yang berfokus pada pengalaman digital yang intuitif dan menarik.",
-      features: [
-        "Penelitian Pengguna",
-        "Wireframing",
-        "Prototyping",
-        "Sistem Desain",
-      ],
-    },
-    {
-      icon: MessageSquare,
-      title: "Konsultasi Teknologi",
-      description:
-        "Panduan teknologi strategis untuk membantu Anda membuat keputusan yang tepat untuk bisnis Anda.",
-      features: [
-        "Teknologi Stack",
-        "Perencanaan Arsitektur",
-        "Praktik Terbaik",
-        "Strategi Pertumbuhan",
-      ],
-    },
-  ];
+import { StaticImageData } from "next/image";
 
+interface Service {
+  title: string;
+  image: string | StaticImageData;
+}
+
+
+const services: Service[] = [
+  { title: "IT Consulting", image: "/images/itconsulting.png" },
+  { title: "Software Development", image: "/images/software-development.jpg" },
+  { title: "System Integration", image: "/images/systemintegration.jpg" },
+  { title: "IT Operational & Maintenance", image: "/images/it-operations.jpg" },
+];
+
+
+const ServicesSection: React.FC = () => {
   return (
-    <section className="py-20 bg-muted/30">
-      <div className="container mx-auto px-6 lg:px-12">
-        <AnimatedSection animation="fade-in-up">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold text-primary mb-4">
+    <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-subtle">
+      <div className="max-w-7xl mx-auto">
+        {/* Header Section */}
+        <AnimatedSection className="flex flex-col items-center text-center mb-12 gap-6">
+          <div className="space-y-2">
+            <h2 className="text-4xl lg:text-5xl font-bold text-primary">
               Layanan Kami
             </h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto">
-              Kami menawarkan berbagai layanan pengembangan perangkat lunak untuk membantu
-              bisnis Anda tumbuh dan berkembang di era digital.
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Tingkatkan Bisnis Anda dengan Solusi IT yang Unggul
             </p>
           </div>
         </AnimatedSection>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        {/* Services Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {services.map((service, index) => (
-            <AnimatedSection 
-              key={index} 
-              animation="zoom-in" 
-              delay={(index % 3) * 100}
+            <AnimatedSection
+              key={service.title}
+              delay={index * 0.1}
+              animation="zoom-in"
             >
-              <div className="bg-card rounded-xl p-8 border shadow-soft hover:shadow-medium transition-all duration-300 h-full">
-                <div className="mb-6 inline-flex items-center justify-center w-14 h-14 rounded-lg bg-primary/10 text-primary">
-                  <service.icon className="h-7 w-7" />
+              <motion.div
+                className="relative h-64 lg:h-72 rounded-2xl overflow-hidden group cursor-pointer"
+                whileHover={{ scale: 1.02 }}
+                transition={{ duration: 0.3, ease: "easeOut" }}
+              >
+                {/* Background Image */}
+                <div
+                  className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
+                  style={{
+                    backgroundImage: `url(${service.image})`
+                  }}
+                />
+                
+                {/* Overlay Gradient */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
+                
+                {/* Service Title */}
+                <div className="absolute bottom-4 left-4 right-4">
+                  <div className="bg-white/90 backdrop-blur-sm rounded-xl px-4 py-3 shadow-lg">
+                    <h3 className="text-sm lg:text-base font-semibold text-gray-900 leading-tight text-primary">
+                      {service.title}
+                    </h3>
+                  </div>
                 </div>
-                <h3 className="text-xl font-semibold mb-3 text-primary">
-                  {service.title}
-                </h3>
-                <p className="text-muted-foreground mb-6">
-                  {service.description}
-                </p>
-                <ul className="space-y-2">
-                  {service.features.map((feature, idx) => (
-                    <li key={idx} className="flex items-center gap-2">
-                      <div className="w-1.5 h-1.5 rounded-full bg-primary" />
-                      <span className="text-sm">{feature}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
+
+                {/* Hover Overlay */}
+                <motion.div
+                  className="absolute inset-0 bg-primary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                  initial={false}
+                />
+              </motion.div>
             </AnimatedSection>
           ))}
         </div>

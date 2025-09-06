@@ -4,7 +4,7 @@ import AnimatedSection from "./AnimatedSection";
 const AboutUs = () => {
   return (
     <section
-      className="relative w-full h-[33vh] bg-cover bg-center bg-no-repeat flex items-center"
+      className="relative w-full h-[33vh] bg-cover bg-center bg-no-repeat flex items-center justify-center"
       style={{
         backgroundImage:
           "url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80')",
@@ -15,7 +15,7 @@ const AboutUs = () => {
 
       {/* Konten */}
       <AnimatedSection animation="fade-in-up">
-        <div className="relative z-10 max-w-4xl mx-auto px-8 text-center text-white w-full">
+        <div className="relative z-10 max-w-4xl mx-auto px-8 text-center text-white flex flex-col items-center justify-center">
           <h2 className="text-4xl font-extrabold mb-2 inline-block relative">
             Tentang Kami
             <span className="block w-20 h-1 bg-indigo-400 rounded mt-2 mx-auto"></span>
