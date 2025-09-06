@@ -1,4 +1,5 @@
 "use client";
+
 import React from "react";
 import {
   Linkedin,
@@ -6,12 +7,35 @@ import {
   Mail,
   MapPin,
   Instagram,
+  Copy,
 } from "lucide-react";
 import { Fade, Slide } from "react-awesome-reveal";
 import { TypeAnimation } from "react-type-animation";
+import { useToast } from "@/hooks/use-toast";
+import { ToastAction } from "@/components/ui/toast";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
+  const email = "sohibcoding@gmail.com";
+  const { toast } = useToast();
+
+  const handleEmailClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+
+    // Salin email ke clipboard
+    navigator.clipboard.writeText(email).then(() => {
+      toast({
+        title: "📧 Email berhasil disalin",
+        description: `${email} telah disalin ke clipboard Anda.`,
+        action: <ToastAction altText="Tutup">Tutup</ToastAction>,
+      });
+    });
+
+    // Buka mail client
+    setTimeout(() => {
+      window.location.href = `mailto:${email}`;
+    }, 300);
+  };
 
   return (
     <footer className="bg-background text-primary">
@@ -30,11 +54,11 @@ const Footer = () => {
               <TypeAnimation
                 sequence={[
                   "Solusi Digital Andal untuk Bisnis Modern.",
-                  500,
+                  1500,
                   "Didirikan pada tahun 2025.",
-                  500,
+                  1500,
                   "Kami membuat website, aplikasi mobile, dan solusi khusus.",
-                  500,
+                  1500,
                 ]}
                 speed={50}
                 wrapper="p"
@@ -45,13 +69,13 @@ const Footer = () => {
 
             <div className="flex gap-4">
               <a
-                href="#"
+                href="https://instagram.com/sohibcoding"
                 className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center hover:bg-primary-foreground/20 transition-colors duration-200"
               >
                 <Instagram className="h-5 w-5" />
               </a>
               <a
-                href="https://instagram.com/sohibcoding"
+                href="#"
                 className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center hover:bg-primary-foreground/20 transition-colors duration-200"
               >
                 <Linkedin className="h-5 w-5" />
@@ -114,10 +138,12 @@ const Footer = () => {
                 <div>
                   <div className="text-sm font-medium">Email</div>
                   <a
-                    href="mailto:sohibcoding@gmail.com"
-                    className="text-primary/80 hover:text-primary-foreground transition-colors text-sm"
+                    href="#"
+                    onClick={handleEmailClick}
+                    className="text-primary/80 hover:text-primary transition-colors text-sm flex items-center gap-1 group"
                   >
-                    sohibcoding@gmail.com
+                    {email}
+                    <Copy className="h-3.5 w-3.5 opacity-0 group-hover:opacity-100 transition-opacity" />
                   </a>
                 </div>
               </div>
