@@ -49,40 +49,40 @@ export default function ExperienceSection() {
       <div className="flex flex-wrap gap-16 max-w-screen-xl w-full">
         {/* Stat 1 */}
         <div className="flex items-center gap-6 flex-1 min-w-[200px]">
-          <div className="w-16 h-16 bg-green-100 rounded-lg flex items-center justify-center">
-            <Code className="h-10 w-10 text-green-600" />
+          <div className="w-16 h-16 bg-primary rounded-lg flex items-center justify-center">
+            <Code className="h-10 w-10 text-blue-100" />
           </div>
           <div>
             <div className="font-extrabold text-primary text-4xl">
               <AnimatedNumber target={10} suffix="+" />
             </div>
-            <div className="text-base text-blue-400">Proyek Selesai</div>
+            <div className="text-base text-primary">Proyek Selesai</div>
           </div>
         </div>
 
         {/* Stat 2 */}
         <div className="flex items-center gap-6 flex-1 min-w-[200px]">
-          <div className="w-16 h-16 bg-yellow-100 rounded-lg flex items-center justify-center">
-            <Smartphone className="h-10 w-10 text-yellow-600" />
+          <div className="w-16 h-16 bg-primary rounded-lg flex items-center justify-center">
+            <Smartphone className="h-10 w-10 text-blue-100" />
           </div>
           <div>
             <div className="font-extrabold text-primary text-4xl">
               <AnimatedNumber target={100} suffix="%" />
             </div>
-            <div className="text-base text-blue-400">Kepuasan Klien</div>
+            <div className="text-base text-primary">Kepuasan Klien</div>
           </div>
         </div>
 
         {/* Stat 3 */}
         <div className="flex items-center gap-6 flex-1 min-w-[200px]">
-          <div className="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center">
-            <Building className="h-10 w-10 text-blue-600" />
+          <div className="w-16 h-16 bg-primary rounded-lg flex items-center justify-center">
+            <Building className="h-10 w-10 text-blue-100" />
           </div>
           <div>
             <div className="font-extrabold text-primary text-4xl">
               <AnimatedNumber target={2025} />
             </div>
-            <div className="text-base text-blue-400">Berdiri</div>
+            <div className="text-base text-primary">Berdiri</div>
           </div>
         </div>
       </div>
