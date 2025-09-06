@@ -11,8 +11,8 @@ interface ClientLogo {
 }
 
 const allClients: ClientLogo[] = [
-  { id: 1, name: "Desa Rias", type: "government" },
-  { id: 2, name: "Desa Pemali", type: "government" },
+  { id: 1, name: "Desa Rias", type: "government",image: "/images/client/basel.png"},
+  { id: 2, name: "Desa Pemali", type: "government",image: "/images/client/pemali.png" },
   { id: 3, name: "Badan Pusat Statistik", type: "government",image: "/images/client/bps.jpg"  },
   { id: 4, name: "Bahrul Ulum Islamic Center", type: "government", image: "/images/client/pesantren.png" },
   { id: 5, name: "Rumah Seduh", type: "company", image: "/images/client/rslogo.jpg" },
