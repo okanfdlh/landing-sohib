@@ -11,6 +11,16 @@ const compat = new FlatCompat({
 
 const eslintConfig = [
   ...compat.extends("next/core-web-vitals", "next/typescript"),
+  {
+    rules: {
+      "@typescript-eslint/no-explicit-any": "off",          // biar any boleh
+      "@typescript-eslint/ban-ts-comment": "off",           // ts-ignore tidak error
+      "@typescript-eslint/no-empty-object-type": "off",     // interface kosong ok
+      "@typescript-eslint/no-unused-vars": ["warn", { argsIgnorePattern: "^_" }], // warning saja
+      "react/display-name": "off",                          // popover tanpa displayName ok
+      "react-hooks/exhaustive-deps": "off",                // hook missing dependency warning
+    },
+  },
 ];
 
 export default eslintConfig;

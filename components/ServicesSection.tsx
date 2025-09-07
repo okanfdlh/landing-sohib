@@ -2,10 +2,8 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { Button } from "@/components/ui/button";
 import AnimatedSection from "@/components/AnimatedSection";
-import { ArrowUpRight } from "lucide-react";
-import { Fade, Zoom, Slide, Bounce } from "react-awesome-reveal";
+import { Slide, Bounce } from "react-awesome-reveal";
 
 import { StaticImageData } from "next/image";
 

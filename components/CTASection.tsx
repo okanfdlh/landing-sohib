@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { ArrowRight, MessageCircleMore } from "lucide-react";
+import { MessageCircleMore } from "lucide-react";
 import AnimatedSection from "./AnimatedSection";
 import LiquidEther from "./LiquidEther";
 import TextType from "./TextType";
