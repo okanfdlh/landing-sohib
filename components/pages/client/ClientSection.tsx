@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import LogoPlaceholder from "@/components/LogoPlaceholder";
 import Image from "next/image";
-import { Fade, Zoom, Bounce, Slide } from "react-awesome-reveal";
+import { Zoom, Bounce, Slide } from "react-awesome-reveal";
 
 interface ClientLogo {
   id: number;

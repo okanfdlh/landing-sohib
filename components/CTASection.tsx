@@ -1,11 +1,5 @@
-"use client";
-
-import React from "react";
-import { ArrowRight, MessageCircleMore } from "lucide-react";
-import AnimatedSection from "./AnimatedSection";
-import LiquidEther from "./LiquidEther";
-import TextType from "./TextType";
-import { Button } from "@/components/ui/button";
+import React from 'react';
+import { ArrowRight, MessageCircle, Calendar } from 'lucide-react';
 
 const CTASection = () => {
   return (
