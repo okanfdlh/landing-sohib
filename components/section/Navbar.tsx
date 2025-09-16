@@ -11,6 +11,7 @@ const sections = [
   { name: "Home", href: "#hero" },
   { name: "About", href: "#about" },
   { name: "Client", href: "#client" },
+  { name: "Test Page", href: "/test" }, 
 ];
 
 const Navbar = () => {

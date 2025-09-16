@@ -19,6 +19,7 @@ const allClients: ClientLogo[] = [
   { id: 3, name: "Badan Pusat Statistik", type: "government", image: "/images/client/bps.jpg" },
   { id: 4, name: "Bahrul Ulum Islamic Center", type: "government", image: "/images/client/pesantren.png" },
   { id: 5, name: "Rumah Seduh", type: "company", image: "/images/client/rslogo.jpg" },
+  { id: 6, name: "Intactbase", type: "company", image: "/images/client/intactbase.png" },
   { id: 9, name: "Polman Babel", type: "university", image: "/images/client/polman.png" },
   { id: 10, name: "Universitas Sriwijaya", type: "university", image: "/images/client/unsli.png" },
 ];
