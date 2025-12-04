@@ -39,10 +39,10 @@ const AboutUs = () => {
           {/* Paragraf dengan animasi fade-in */}
           <Fade delay={400} duration={1000} cascade damping={0.2}>
             <p className="text-md leading-relaxed tracking-wide max-w-3xl mx-auto">
-              Kami adalah perusahaan yang berdedikasi untuk memberikan solusi
-              terbaik di bidang teknologi aplikasi. Dengan pengalaman lebih dari 10
-              tahun, kami berkomitmen untuk membantu klien mencapai tujuan bisnis
-              mereka melalui inovasi dan layanan berkualitas tinggi.
+              Kami adalah penyedia jasa yang berdedikasi untuk memberikan solusi 
+              terbaik di bidang teknologi aplikasi. Dengan tim yang kompeten dan 
+              fokus pada kualitas, kami berkomitmen untuk membantu klien mencapai 
+              tujuan bisnis mereka melalui inovasi dan layanan yang terpercaya.
             </p>
           </Fade>
         </div>
