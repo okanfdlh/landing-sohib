@@ -16,8 +16,47 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Sohib Teknologi",
-  description: "Sohib Teknologi",
+  metadataBase: new URL("https://sohibtech.vercel.app"),
+  title: {
+    default: "Sohib Teknologi",
+    template: "%s | Sohib Teknologi",
+  },
+  description:
+    "Sohib Teknologi adalah penyedia jasa pembuatan website dan solusi digital untuk bisnis, UMKM, dan personal branding.",
+  openGraph: {
+    title: "Sohib Teknologi",
+    description:
+      "Jasa pembuatan website profesional untuk bisnis dan UMKM dengan teknologi modern.",
+    url: "https://sohibtech.vercel.app",
+    siteName: "Sohib Teknologi",
+    type: "website",
+    images: [
+      {
+        url: "https://sohibtech.vercel.app/og-image.png", // kalau belum ada, nanti saya bisa buatkan
+        width: 1200,
+        height: 630,
+        alt: "Sohib Teknologi",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Sohib Teknologi",
+    description:
+      "Layanan pembuatan website profesional untuk bisnis dan UMKM.",
+    images: ["https://sohibtech.vercel.app/og-image.png"],
+  },
+  alternates: {
+    canonical: "https://sohibtech.vercel.app",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
+  },
 };
 
 export default function RootLayout({
