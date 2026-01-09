@@ -5,14 +5,16 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { MessageCircleMore } from "lucide-react";
-import { Divide as Hamburger } from "hamburger-react"; // gaya burger (ada Boring, Divide, Squash, dll)
+import { Divide as Hamburger } from "hamburger-react";
 
 const sections = [
   { name: "Home", href: "#hero" },
   { name: "About", href: "#about" },
   { name: "Client", href: "#client" },
-  { name: "Test Page", href: "/test" }, 
+  { name: "Test Page", href: "/test" },
 ];
+
+const whatsappNumber = "6281281680004"; // format WA internasional
 
 const Navbar = () => {
   const [isOpen, setOpen] = useState(false);
@@ -37,10 +39,17 @@ const Navbar = () => {
               {section.name}
             </Link>
           ))}
-          <Button variant="hero" size="sm" className="group">
-            Hubungi Kami
-            <MessageCircleMore className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-          </Button>
+
+          <a
+            href={`https://wa.me/${whatsappNumber}`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Button variant="hero" size="sm" className="group">
+              Hubungi Kami
+              <MessageCircleMore className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+            </Button>
+          </a>
         </div>
 
         {/* Mobile Hamburger */}
@@ -65,15 +74,22 @@ const Navbar = () => {
                 </Link>
               </li>
             ))}
-            <li>
-              <Button
-                variant="hero"
-                size="sm"
-                className="w-full flex justify-center group"
+            <li className="w-full">
+              <a
+                href={`https://wa.me/${whatsappNumber}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full block"
               >
-                Hubungi Kami
-                <MessageCircleMore className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-              </Button>
+                <Button
+                  variant="hero"
+                  size="sm"
+                  className="w-full flex justify-center group"
+                >
+                  Hubungi Kami
+                  <MessageCircleMore className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                </Button>
+              </a>
             </li>
           </ul>
         </div>
