@@ -7,6 +7,13 @@ import LiquidEther from "./LiquidEther";
 import TextType from "./TextType";
 import { Button } from "@/components/ui/button";
 
+const whatsappNumber = "6281281680004";
+const message = encodeURIComponent(
+  "Halo 👋\n\n" +
+  "Saya ingin berkonsultasi terkait pengembangan sistem.\n" +
+  "Mohon informasi terkait layanan, alur pengerjaan, estimasi waktu, dan biaya.\n\n" +
+  "Terima kasih 🙏"
+);
 const CTASection = () => {
   return (
     <section className="relative py-32 bg-gradient-primary overflow-hidden flex items-center justify-center">
@@ -53,7 +60,13 @@ const CTASection = () => {
                   size="xl"
                   className="group shadow-lg hover:scale-105 transition-transform"
                 >
-                  Hubungi Kami
+                  <a
+                    href={`https://wa.me/${whatsappNumber}?text=${message}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Hubungi Kami
+                  </a>
                   <MessageCircleMore className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                 </Button>
               </div>

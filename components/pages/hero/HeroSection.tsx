@@ -5,6 +5,13 @@ import AnimatedSection from "../../AnimatedSection";
 import LiquidEther from "../../LiquidEther";
 import TextType from '../../TextType';
 
+const whatsappNumber = "6281281680004";
+const message = encodeURIComponent(
+  "Halo 👋\n\n" +
+  "Saya ingin berkonsultasi terkait pengembangan sistem.\n" +
+  "Mohon informasi terkait layanan, alur pengerjaan, estimasi waktu, dan biaya.\n\n" +
+  "Terima kasih 🙏"
+);
 const HeroSection = () => {
   return (
     <section id="hero" className="relative min-h-screen flex items-center justify-center bg-gradient-subtle overflow-hidden mt-6">
@@ -47,7 +54,13 @@ const HeroSection = () => {
             {/* CTA Section */}
             <div className="flex flex-col sm:flex-row gap-4 items-center justify-center">
               <Button variant="hero" size="xl" className="group">
-                Konsultasi Gratis
+                <a
+                  href={`https://wa.me/${whatsappNumber}?text=${message}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Konsultasi Gratis
+                </a>
                 <MessageCircleMore className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </Button>
               <Button variant="outline" size="xl" className="font-inter">
