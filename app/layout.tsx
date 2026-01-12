@@ -16,68 +16,75 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://sohibtech.vercel.app"),
+  metadataBase: new URL(
+    process.env.NEXT_PUBLIC_SITE_URL || "https://sohibtech.vercel.app"
+  ),
+
   title: {
-    default: "Sohib Teknologi",
+    default: "Sohib Teknologi | Jasa Pembuatan Website Sungailiat",
     template: "%s | Sohib Teknologi",
   },
+
   description:
-    "Sohib Teknologi adalah penyedia jasa pembuatan website dan solusi digital untuk bisnis, UMKM, dan personal branding.",
+    "Sohib Teknologi adalah perusahaan IT Sungailiat yang menyediakan jasa pembuatan website profesional untuk UMKM, bisnis, dan personal branding. Melayani jasa pembuatan web Sungailiat dan joki website terpercaya.",
+
   openGraph: {
-    title: "Sohib Teknologi",
+    title: "Sohib Teknologi | Jasa Pembuatan Website Sungailiat",
     description:
-      "Jasa pembuatan website profesional untuk bisnis dan UMKM dengan teknologi modern.",
+      "Perusahaan IT Sungailiat yang fokus pada jasa pembuatan website UMKM dan bisnis dengan desain modern dan SEO-friendly.",
     url: "https://sohibtech.vercel.app",
     siteName: "Sohib Teknologi",
     type: "website",
+    locale: "id_ID",
     images: [
       {
-        url: "https://sohibtech.vercel.app/og-image.png", // kalau belum ada, nanti saya bisa buatkan
+        url: "https://sohibtech.vercel.app/og-image.png",
         width: 1200,
         height: 630,
         alt: "Sohib Teknologi",
       },
     ],
   },
+
   twitter: {
     card: "summary_large_image",
-    title: "Sohib Teknologi",
+    title: "Sohib Teknologi | Jasa Website Sungailiat",
     description:
-      "Layanan pembuatan website profesional untuk bisnis dan UMKM.",
+      "Jasa pembuatan website Sungailiat untuk UMKM dan bisnis.",
     images: ["https://sohibtech.vercel.app/og-image.png"],
   },
+
   alternates: {
     canonical: "https://sohibtech.vercel.app",
   },
+
   robots: {
     index: true,
     follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-    },
   },
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
-    <html lang="en">
+    <html lang="id">
       <head>
-        <meta name="google-site-verification" content="y-kA3P26QnMT0JAtonL27UAyq0CPuJR9NvlCZNs-xWU" />
+        <meta
+          name="google-site-verification"
+          content="y-kA3P26QnMT0JAtonL27UAyq0CPuJR9NvlCZNs-xWU"
+        />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Navbar />
         {children}
-         <Toaster />
-         <FloatingContactButton />
+        <Toaster />
+        <FloatingContactButton />
       </body>
     </html>
   );
 }
-

@@ -11,10 +11,15 @@ const sections = [
   { name: "Home", href: "#hero" },
   { name: "About", href: "#about" },
   { name: "Client", href: "#client" },
-  { name: "Test Page", href: "/test" },
 ];
 
 const whatsappNumber = "6281281680004"; // format WA internasional
+const message = encodeURIComponent(
+  "Halo 👋\n\n" +
+  "Saya ingin berkonsultasi terkait pengembangan sistem.\n" +
+  "Mohon informasi terkait layanan, alur pengerjaan, estimasi waktu, dan biaya.\n\n" +
+  "Terima kasih 🙏"
+);
 
 const Navbar = () => {
   const [isOpen, setOpen] = useState(false);
@@ -76,7 +81,7 @@ const Navbar = () => {
             ))}
             <li className="w-full">
               <a
-                href={`https://wa.me/${whatsappNumber}`}
+                href={`https://wa.me/${whatsappNumber}?text=${message}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full block"
