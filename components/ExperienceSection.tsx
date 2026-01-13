@@ -104,7 +104,7 @@ export default function ExperienceSection() {
               </div>
               <div>
                 <div className="font-extrabold text-primary text-4xl">
-                  <AnimatedNumber target={2022} />
+                  <AnimatedNumber target={2025} />
                 </div>
                 <div className="text-base text-primary">Berdiri</div>
               </div>
