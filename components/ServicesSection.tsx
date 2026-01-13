@@ -14,8 +14,8 @@ interface Service {
 
 const services: Service[] = [
   { title: "Konsultasi IT", image: "/images/itconsulting.png" },
-  { title: "Pengembangan Software", image: "/images/software-development.jpg" },
-  { title: "Integrasi Sistem", image: "/images/systemintegration.jpg" },
+  { title: "Pengembangan Website", image: "/images/software-development.jpg" },
+  { title: "Pengembangan Aplikasi", image: "/images/systemintegration.jpg" },
   { title: "Operasional & Pemeliharaan IT", image: "/images/it-operations.jpg" },
 ];
 

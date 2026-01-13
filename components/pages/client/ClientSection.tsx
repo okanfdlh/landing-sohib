@@ -75,7 +75,7 @@ const ClientShowcase = () => {
           <ClientGrid clients={allClients} />
 
           {/* More Button */}
-          <div className="text-center mt-16">
+          {/* <div className="text-center mt-16">
             <Bounce>
               <Button
                 variant="hero"
@@ -86,7 +86,7 @@ const ClientShowcase = () => {
                 <ArrowRight className="w-4 h-4 ml-2" />
               </Button>
             </Bounce>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
