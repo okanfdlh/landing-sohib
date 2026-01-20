@@ -11,6 +11,7 @@ import {
 import { Fade, Slide } from "react-awesome-reveal";
 import { TypeAnimation } from "react-type-animation";
 import { useToast } from "@/hooks/use-toast";
+import Image from "next/image";
 import { ToastAction } from "@/components/ui/toast";
 
 const Footer = () => {
@@ -45,9 +46,13 @@ const Footer = () => {
           <div className="space-y-6">
             <div>
               <Fade cascade damping={0.3}>
-                <h3 className="font-inter text-2xl font-bold mb-2">
-                  Sohib Teknologi
-                </h3>
+                <Image
+                  src="/images/sohib-logo.png"
+                  alt="Sohib Teknologi Logo"
+                  width={160}
+                  height={48}
+                  className="h-12 w-auto mb-2"
+                />
               </Fade>
 
               <TypeAnimation

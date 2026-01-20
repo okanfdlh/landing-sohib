@@ -1,8 +1,8 @@
-// components/Navbar.tsx
 "use client";
 
 import React, { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { MessageCircleMore } from "lucide-react";
 import { Divide as Hamburger } from "hamburger-react";
@@ -13,12 +13,13 @@ const sections = [
   { name: "Client", href: "#client" },
 ];
 
-const whatsappNumber = "6281281680004"; // format WA internasional
+const whatsappNumber = "6281281680004";
+
 const message = encodeURIComponent(
   "Halo 👋\n\n" +
-  "Saya ingin berkonsultasi terkait pengembangan sistem.\n" +
-  "Mohon informasi terkait layanan, alur pengerjaan, estimasi waktu, dan biaya.\n\n" +
-  "Terima kasih 🙏"
+    "Saya ingin berkonsultasi terkait pengembangan sistem.\n" +
+    "Mohon informasi terkait layanan, alur pengerjaan, estimasi waktu, dan biaya.\n\n" +
+    "Terima kasih 🙏"
 );
 
 const Navbar = () => {
@@ -27,10 +28,17 @@ const Navbar = () => {
   return (
     <nav className="w-full fixed top-0 left-0 z-50 bg-white/80 backdrop-blur-md border-b border-border shadow-sm">
       <div className="container mx-auto flex items-center justify-between px-6 py-4">
-        {/* Brand */}
-        <div className="text-2xl font-bold text-primary tracking-tight">
-          Sohib Teknologi
-        </div>
+        {/* Brand Logo */}
+        <Link href="#hero" className="flex items-center">
+          <Image
+            src="/images/sohib-logo.png"
+            alt="Sohib Teknologi Logo"
+            width={140}
+            height={40}
+            priority
+            className="h-10 w-auto"
+          />
+        </Link>
 
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center gap-6">
@@ -38,7 +46,7 @@ const Navbar = () => {
             <Link
               key={section.href}
               href={section.href}
-              scroll={true}
+              scroll
               className="text-sm font-medium text-foreground hover:text-primary transition-colors"
             >
               {section.name}
@@ -63,34 +71,28 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile Menu Drawer */}
+      {/* Mobile Menu */}
       {isOpen && (
         <div className="md:hidden absolute top-[72px] left-0 w-full bg-white shadow-lg border-t border-border animate-fadeIn">
-          <ul className="flex flex-col items-start gap-4 px-6 py-6">
+          <ul className="flex flex-col gap-4 px-6 py-6">
             {sections.map((section) => (
               <li key={section.href}>
                 <Link
                   href={section.href}
-                  scroll={true}
                   onClick={() => setOpen(false)}
-                  className="block text-base font-medium text-foreground hover:text-primary transition-colors"
+                  className="text-base font-medium hover:text-primary"
                 >
                   {section.name}
                 </Link>
               </li>
             ))}
-            <li className="w-full">
+            <li>
               <a
                 href={`https://wa.me/${whatsappNumber}?text=${message}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full block"
               >
-                <Button
-                  variant="hero"
-                  size="sm"
-                  className="w-full flex justify-center group"
-                >
+                <Button variant="hero" size="sm" className="w-full group">
                   Hubungi Kami
                   <MessageCircleMore className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                 </Button>
